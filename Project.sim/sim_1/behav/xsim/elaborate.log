@@ -1,0 +1,19 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 6507ede10a1f48bea58c9b3c88794f44 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_sim_behav xil_defaultlib.vga_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 10 for port up_tube_left_x [D:/Xilinx/testproject/Project/Project.srcs/sim_1/new/vga_sim.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.37...
+Compiling module xil_defaultlib.clk_wiz_1_clk_wiz_1_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_1
+Compiling module xil_defaultlib.VGA
+Compiling module xil_defaultlib.vga_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_sim_behav

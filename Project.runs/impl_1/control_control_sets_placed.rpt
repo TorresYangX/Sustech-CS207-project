@@ -1,0 +1,86 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Aug  5 16:46:51 2022
+| Host         : DESKTOP-17MUC71 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file control_control_sets_placed.rpt
+| Design       : control
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    74 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             114 |           47 |
+| Yes          | No                    | No                     |               7 |            4 |
+| Yes          | No                    | Yes                    |              15 |            4 |
+| Yes          | Yes                   | No                     |             162 |           65 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-----------------------------------+-------------------------------------+------------------+----------------+
+|         Clock Signal        |           Enable Signal           |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------------------+-----------------------------------+-------------------------------------+------------------+----------------+
+|  rst_IBUF_BUFG              |                                   | start_IBUF                          |                1 |              1 |
+|  clk_out_BUFG               |                                   |                                     |                1 |              2 |
+|  Bird/clk_g_reg_n_0         |                                   | Bird/g0                             |                1 |              4 |
+|  dp/clkout_reg_n_0          | dp/p_0_out__0                     |                                     |                4 |              7 |
+|  clk_IBUF_BUFG              | tube/random2                      | fsm/SS[0]                           |                3 |              8 |
+|  clk_IBUF_BUFG              | tube/random                       | fsm/SS[0]                           |                2 |              9 |
+|  vga/clk_inst/inst/clk_out1 |                                   | rst_IBUF_BUFG                       |                6 |             10 |
+|  vga/clk_inst/inst/clk_out1 | vga/y_cnt[9]_i_2_n_0              | vga/y_cnt[9]_i_1_n_0                |                3 |             10 |
+|  clk_out_BUFG               | tube/score_reg[14]_1              | rst_IBUF_BUFG                       |                4 |             15 |
+|  clk_out_BUFG               | tube/up_tube2_bottom_y[8]_i_1_n_0 | Bird/bottom_tube2_right_x_reg[8][0] |                6 |             16 |
+|  clk_out_BUFG               | tube/up_tube_right_x[8]_i_2_n_0   | tube/up_tube_right_x[8]_i_1_n_0     |               10 |             18 |
+|  clk_out_BUFG               | tube/up_tube2_right_x[9]_i_2_n_0  | tube/up_tube2_right_x[9]_i_1_n_0    |               10 |             18 |
+|  clk_out_BUFG               | tube/up_tube_bottom_y[8]_i_1_n_0  | Bird/bottom_tube2_right_x_reg[8][0] |                7 |             19 |
+|  clk_out_BUFG               | fsm/E[0]                          | fsm/bird_bottom_y_reg[0][0]         |                6 |             20 |
+|  clk_out_BUFG               | tube/up_tube_right_x[9]_i_2_n_0   | Bird/bottom_tube2_right_x_reg[8][0] |               10 |             22 |
+|  clk_out_BUFG               | tube/up_tube2_right_x[8]_i_1_n_0  | Bird/bottom_tube2_right_x_reg[8][0] |                8 |             22 |
+|  dp/clkout_reg_n_0          |                                   |                                     |               11 |             26 |
+|  clk_IBUF_BUFG              |                                   | rst_IBUF_BUFG                       |               39 |             99 |
++-----------------------------+-----------------------------------+-------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 4      |                     1 |
+| 7      |                     1 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 15     |                     1 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+
