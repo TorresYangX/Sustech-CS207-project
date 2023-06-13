@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Xilinx/testproject/Project/Project.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,,,,,,,,,
+D:/Xilinx/testproject/Project/Project.srcs/sim_1/new/vga_sim.v,1659102289,verilog,,,,vga_sim,,,,,,,,
+D:/Xilinx/testproject/Project/Project.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_sim_netlist.v,1659095753,verilog,,D:/Xilinx/testproject/Project/Project.srcs/sources_1/new/VGA.v,,clk_wiz_1;clk_wiz_1_clk_wiz_1_clk_wiz;glbl,,,,,,,,
+D:/Xilinx/testproject/Project/Project.srcs/sources_1/new/VGA.v,1659167313,verilog,,D:/Xilinx/testproject/Project/Project.srcs/sim_1/new/vga_sim.v,,VGA,,,,,,,,
